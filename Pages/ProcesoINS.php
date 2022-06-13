@@ -2,8 +2,8 @@
     include "../conexion.inc";
     // capturar datos del formulario
     $descripcion = utf8_decode($_POST["DES"]);
-    $importe      = $_POST["IMP"];
-    $fecha      = $_POST["FEC"];
+    $importe     = $_POST["IMP"];
+    $fecha       = $_POST["FEC"];
     // crear sentencia SQL
     $sql  = "INSERT INTO gestion ";
     $sql .= "(idGastos,descripcionGastos,importeGastos,fechaGastos) ";
