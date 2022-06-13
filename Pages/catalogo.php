@@ -54,6 +54,10 @@
                             </td>
                         </tr>
                     </table>
+                    <h1>a</h1>
+                    <?php
+                echo "<input type='button' value='Atras' onClick='history.go(-1);'>";
+                ?>
                 </form>
             </fieldset>
         </div>
