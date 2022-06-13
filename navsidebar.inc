@@ -65,11 +65,11 @@
                                 <ul id="Egresos">
                                     <li>
                                         <i class="fas fa-file-invoice-dollar"></i>
-                                        <a href="./consultas.php">Egresos Pasados</a>
+                                        <a href="./consultas.php">Egresos Fijos</a>
                                     </li>
                                     <li>
                                         <i class="far fa-calendar-alt"></i>
-                                        <a href="#">Egresos Futuros</a>
+                                        <a href="#">Otros Egresos</a>
                                     </li>
                                 </ul>
                             </li>

@@ -40,13 +40,14 @@
                                     <option selected value="0"> Elige una opción </option>
                                     <optgroup label="Ingreso">
                                         <option value="1">Ingreso Fijo</option>
-                                        <option value="2">Inversion</option>
+                                        <option value="2">Otro Ingreso</option>
                                     </optgroup>
                                     <optgroup label="Egreso">
-                                        <option value="3">Egreso</option>
+                                        <option value="3">Egreso Fijo</option>
+                                        <option value="4">Otro Egreso</option>
                                     </optgroup>
                                     <optgroup label="Ahorro">
-                                        <option value="4">Ahorro</option>
+                                        <option value="5">Ahorro</option>
                                     </optgroup>
                                 </select>
                             </td>
