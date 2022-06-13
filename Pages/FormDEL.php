@@ -59,6 +59,9 @@
                             <!-- botones del formulario -->
                             <tr>
                                 <td id="botonesformulario" colspan="2">
+                                    <?php
+                                    echo "<input type='button' class='bn632-hover bn19' value='Atras' onClick='history.go(-1);'>";
+                                    ?>
                                     <input type="button" class="bn632-hover bn19" value="Confirmar" onclick="CheckID();" />
                                     <input type="button" class="bn632-hover bn19" value="Cancelar" />
                                 </td>

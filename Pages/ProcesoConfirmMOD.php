@@ -89,7 +89,10 @@ mysqli_close($conex);
                     <!--BOTONES DEL FORMULARIO-->
                     <tr>
                         <td id="botonesformulario" colspan="2">
-                            <input type="button" class="bn632-hover bn19" value="Confirmar" onclick="CheckForm('Modificar');"  />
+                            <?php
+                            echo "<input type='button' class='bn632-hover bn19' value='Atras' onClick='history.go(-1);'>";
+                            ?>
+                            <input type="button" class="bn632-hover bn19" value="Confirmar" onclick="CheckForm('Modificar');" />
                             <input type="button" class="bn632-hover bn19" value="Cancelar" onclick="SetPage('FormMOD.php');" />
                         </td>
                     </tr>
