@@ -34,6 +34,14 @@ table {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.tableFooter{
+  margin-left: 7%;
+}
+
+#TablaConsultas{
+  margin-left: 8.5%;
+}
+
 th,
 td {
   padding: 15px;
@@ -154,6 +162,9 @@ input {
 
 .Filtro {
   display: flex;
+  width: 70%;
+  margin-top: 10%;
+  margin-left: 20%;
 }
 
 .errorField {
@@ -209,12 +220,12 @@ a:hover {
   margin-top: 15px;
   padding: 4px 12px;
   width: 50%;
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 #total {
   display: none;
-  margin-left: 11%;
+  margin-left: 14.5%;
   color: #fff;
 }
 
@@ -226,11 +237,6 @@ a:hover {
   width: 70%;
   margin-top: 10%;
   margin-left: 20%;
-}
-
-.logOut {
-  background: #ff00734b;
-  margin-left: 50%;
 }
 
 .main_box {
