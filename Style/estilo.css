@@ -119,6 +119,31 @@ h5 {
   font-size: 38px;
   text-align: center;
 }
+/*Para consultas*/
+h6{
+  color: black;
+  font-family: 'Birthstone', cursive;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/*Opciones Consultas*/
+.botonesOptions{
+  color: black;
+  font-family: 'Quintessential', cursive;
+  font-size: 26px;
+  font-weight: bold;
+}
+.inline-radio {
+	display: flex;
+  border-radius: 3px;
+	overflow: hidden;
+  border: 1px solid #b6b6b6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
 
 #tablaFRM {
   font-family: 'PT Sans Narrow', sans-serif;
@@ -149,15 +174,11 @@ input {
 }
 
 /*Botones de enviar y cancelar*/
-#botonesformulario {
-  text-align: center;
-}
-
-/*Botones de enviar y cancelar*/
 .BotonesFormulario {
   background: #ff00734b;
   padding: 5px;
   cursor: pointer;
+  text-align: center;
 }
 
 .Filtro {
