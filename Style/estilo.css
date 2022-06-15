@@ -144,6 +144,9 @@ h6{
   font-weight: bold;
   color: black;
 }
+.opciones{
+  margin: 5px;
+}
 
 #tablaFRM {
   font-family: 'PT Sans Narrow', sans-serif;

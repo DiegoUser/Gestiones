@@ -46,12 +46,12 @@
                                 <td class="botonesformulario" colspan="2">
                                     <fieldset>
                                         <legend>
-                                            <h6>Tipo de consulta:</h6>
+                                            <h6>Tipo de consulta</h6>
                                         </legend>
                                         <group class="inline-radio">
-                                            <div><input type="radio" name="options" checked><label>Ingreso</label></div>
-                                            <div><input type="radio" name="options"><label>Egreso</label></div>
-                                            <div><input type="radio" name="options"><label>Ahorro</label></div>
+                                            <div><input type="radio" class="opciones" name="options" checked><label>Ingreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options"><label>Egreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options"><label>Ahorro</label></div>
                                         </group>
                                     </fieldset>
                                 </td>
