@@ -92,6 +92,9 @@
                     <th>
                         <a href='./ProcesoFiltro.php?ORD=fechaGastos&DES=$descripcion'>Fecha</a>
                     </th>
+                    <th>
+                        <a href='./ProcesoFiltro.php?ORD=tipoGastos&DES=$descripcion'>Tipo</a>
+                    </th>
                 </tr>
                 </thead>
                 ";

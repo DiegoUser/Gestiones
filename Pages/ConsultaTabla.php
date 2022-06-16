@@ -6,6 +6,7 @@ while ($regGastos   = mysqli_fetch_array($result)) {
     $descripcion    = $regGastos["descripcionGastos"];
     $importe        = $regGastos["importeGastos"];
     $fecha          = $regGastos["fechaGastos"];
+    $tipo           = $regGastos["tipoGastos"];
     $resto = $fila % 2;
     if ($resto == 0) {
         echo "<tr class='filaPAR'>\n";
@@ -16,6 +17,7 @@ while ($regGastos   = mysqli_fetch_array($result)) {
     echo " <td>$descripcion</td>\n";
     echo " <td>$importe</td>\n";
     echo " <td>$fecha</td>\n";
+    echo " <td>$tipo</td>\n";
     echo "<tr>\n";
     $total=$total+$importe;
     $fila++;
