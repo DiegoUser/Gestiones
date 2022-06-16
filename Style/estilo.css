@@ -33,13 +33,13 @@ table {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-
+/*boton total*/
 .tableFooter{
   margin-left: 7%;
 }
 
 #TablaConsultas{
-  margin-left: 8.5%;
+  margin-left: 2.5%;
 }
 
 th,
@@ -249,7 +249,7 @@ a:hover {
 
 #total {
   display: none;
-  margin-left: 14.5%;
+  margin-left: 8%;
   color: #fff;
 }
 
