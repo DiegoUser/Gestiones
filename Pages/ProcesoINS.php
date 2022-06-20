@@ -4,7 +4,7 @@ include "../conexion.inc";
 $descripcion = utf8_decode($_POST["DES"]);
 $importe     = $_POST["IMP"];
 $fecha       = $_POST["FEC"];
-$tipo        = $_POST["Añadir"];
+$tipo        = $_POST["Agregar"];
 $tipoGasto   = '';
 
 //definir tipo

@@ -75,6 +75,7 @@
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
                     <?php
+                    $options = $_POST["options"];
                     // determinar filtro del listado
                     if (isset($_POST["DES"])) {
                         // asignar filtro especificado en el formulario
@@ -123,7 +124,7 @@
 
                     if (!empty($descripcion)) {
                         include "../conexion.inc";
-                        $sql = "SELECT * FROM gestion WHERE descripcionGastos LIKE '%$descripcion%' ORDER BY $orden";
+                        $sql = "SELECT * FROM gestion WHERE descripcionGastos LIKE '%$descripcion%' AND tipoGastos LIKE '%$options%' ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         if (mysqli_num_rows($result) == 0) {
                     ?>

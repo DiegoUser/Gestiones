@@ -49,9 +49,9 @@
                                             <h6>Tipo de consulta</h6>
                                         </legend>
                                         <group class="inline-radio">
-                                            <div><input type="radio" class="opciones" name="options" checked><label>Ingreso</label></div>
-                                            <div><input type="radio" class="opciones" name="options"><label>Egreso</label></div>
-                                            <div><input type="radio" class="opciones" name="options"><label>Ahorro</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Ingreso" id="Ingreso" checked><label for="Ingreso">Ingreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Egreso" id="Egreso"><label for="Egreso">Egreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Ahorro" id="Ahorro"><label for="Ahorro">Ahorro</label></div>
                                         </group>
                                     </fieldset>
                                 </td>
