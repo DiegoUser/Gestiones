@@ -50,9 +50,9 @@
                                             <h6>Tipo de consulta</h6>
                                         </legend>
                                         <group class="inline-radio">
-                                            <div><input type="radio" class="opciones" name="options" checked><label>Ingreso</label></div>
-                                            <div><input type="radio" class="opciones" name="options"><label>Egreso</label></div>
-                                            <div><input type="radio" class="opciones" name="options"><label>Ahorro</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Ingreso" checked><label>Ingreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Egreso"><label>Egreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Ahorro"><label>Ahorro</label></div>
                                         </group>
                                     </fieldset>
                                 </td>
@@ -117,7 +117,7 @@
                 ";
                     if (empty($descripcion)) {
                         include "../conexion.inc";
-                        $sql = "SELECT * FROM gestion ORDER BY $orden";
+                        $sql = "SELECT * FROM gestion WHERE tipoGastos LIKE '%$options%' ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
