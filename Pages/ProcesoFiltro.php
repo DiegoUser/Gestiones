@@ -1,3 +1,7 @@
+
+<?php 
+//hasta encontrar porque no se setea la variable $options cuando se le da un orden
+error_reporting (E_ALL ^ E_NOTICE); ?> 
 <!DOCTYPE html>
 <html lang="es">
 
@@ -76,6 +80,11 @@
                 <table id="TablaConsultas">
                     <?php
                     $options = $_POST["options"];
+                    if (!isset($options)){
+                        $options = $_GET["options"];
+                    }else{
+
+                    }
                     // determinar filtro del listado
                     if (isset($_POST["DES"])) {
                         // asignar filtro especificado en el formulario
@@ -98,19 +107,19 @@
                     echo "<thead>
                 <tr>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=idGastos&DES=$descripcion'>ID</a>
+                        <a href='./ProcesoFiltro.php?ORD=idGastos&DES=$descripcion&options=$options'>ID</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=descripcionGastos&DES=$descripcion'>Descripcion</a>
+                        <a href='./ProcesoFiltro.php?ORD=descripcionGastos&DES=$descripcion&options=$options'>Descripcion</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=importeGastos&DES=$descripcion'>Importe</a>
+                        <a href='./ProcesoFiltro.php?ORD=importeGastos&DES=$descripcion&options=$options'>Importe</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=fechaGastos&DES=$descripcion'>Fecha</a>
+                        <a href='./ProcesoFiltro.php?ORD=fechaGastos&DES=$descripcion&options=$options'>Fecha</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=tipoGastos&DES=$descripcion'>Tipo</a>
+                        <a href='./ProcesoFiltro.php?ORD=tipoGastos&DES=$descripcion&options=$options'>Tipo</a>
                     </th>
                 </tr>
                 </thead>
