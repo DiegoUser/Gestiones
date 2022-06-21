@@ -30,7 +30,7 @@
         <?php include "../navsidebar.inc" ?>
         <div class="Filtro">
             <fieldset>
-                <legend>Egresos</legend>
+                <legend>Consultas</legend>
                 <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                     <table>
                         <tbody>
@@ -43,7 +43,21 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td id="botonesformulario" colspan="2">
+                                <td class="botonesformulario" colspan="2">
+                                    <fieldset>
+                                        <legend>
+                                            <h6>Tipo de consulta</h6>
+                                        </legend>
+                                        <group class="inline-radio">
+                                            <div><input type="radio" class="opciones" name="options" value="Ingreso" id="Ingreso" checked><label for="Ingreso">Ingreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Egreso" id="Egreso"><label for="Egreso">Egreso</label></div>
+                                            <div><input type="radio" class="opciones" name="options" value="Ahorro" id="Ahorro"><label for="Ahorro">Ahorro</label></div>
+                                        </group>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="botonesformulario" colspan="2">
                                     <?php
                                     echo "<input type='button' class='bn632-hover bn19' value='Atras' onClick='history.go(-1);'>";
                                     ?>
