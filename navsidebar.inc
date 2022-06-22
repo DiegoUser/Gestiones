@@ -42,42 +42,14 @@
                             </li>
                         </div>
                         <!-- Fin de Data -->
-                        <div onclick="SetBox('Ingresos')">
+                        <div onclick="SetBox('Consultas')">
                             <li>
                                 <i class="fas fa-user-plus"></i>
-                                <a href="#">Ingresos</a>
-                                <ul id="Ingresos">
-                                    <li>
-                                        <i class="fas fa-wallet"></i>
-                                        <a href="#">Ingresos Fijos</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-chart-line"></i>
-                                        <a href="#">Otros Ingresos</a>
-                                    </li>
+                                <a href="./consultas.php">Consultas</a>
+                                <ul id="Consultas">
                                 </ul>
                             </li>
                         </div>
-                        <div onclick="SetBox('Egresos')">
-                            <li>
-                                <i class="fas fa-user-minus"></i>
-                                <a href="#">Egresos</a>
-                                <ul id="Egresos">
-                                    <li>
-                                        <i class="fas fa-file-invoice-dollar"></i>
-                                        <a href="./consultas.php">Egresos Fijos</a>
-                                    </li>
-                                    <li>
-                                        <i class="far fa-calendar-alt"></i>
-                                        <a href="#">Otros Egresos</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
-                        <li>
-                            <i class="fas fa-piggy-bank"></i>
-                            <a href="#">Ahorros</a>
-                        </li>
                         <li>
                             <i class="far fa-comments"></i>
                             <a href="#">Planes</a>
