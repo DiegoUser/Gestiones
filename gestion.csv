@@ -1,0 +1,7 @@
+"idGastos","descripcionGastos","fechaGastos","importeGastos","tipoGastos"
+"31","TARJETA","2022-06-24","500","Ingreso"
+"35","OTRO AHORRO","2022-06-21","2000","Ahorro"
+"33","OTRO INGRESO","2022-06-08","2000","Ingreso"
+"34","OTRO EGRESO","2022-06-21","2000","Egreso"
+"32","CALABAZA","2022-06-20","100","Ahorro"
+"30","FACTURA","2022-06-15","5000","Egreso"
