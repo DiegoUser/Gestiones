@@ -1,7 +1,3 @@
-
-<?php 
-//hasta encontrar porque no se setea la variable $options cuando se le da un orden
-error_reporting (E_ALL ^ E_NOTICE); ?> 
 <!DOCTYPE html>
 <html lang="es">
 
@@ -79,12 +75,9 @@ error_reporting (E_ALL ^ E_NOTICE); ?>
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
                     <?php
-                    $options = $_POST["options"];
-                    if (!isset($options)){
-                        $options = $_GET["options"];
-                    }else{
-
-                    }
+                    isset ($_POST['options']) ? $options =
+                    $_POST['options'] : $options =
+                    $_GET['options'];
                     // determinar filtro del listado
                     if (isset($_POST["DES"])) {
                         // asignar filtro especificado en el formulario
