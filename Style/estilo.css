@@ -433,11 +433,8 @@ a:hover {
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
 #Data{
-  display: none;
+  display: block;
 }
-#Ingresos{
-  display: none;
-}
-#Egresos{
-  display: none;
+#Menu{
+  font-size: 18px;
 }

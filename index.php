@@ -29,33 +29,28 @@
                 <div class="logo">
                     <a href="./index.php">Gestión</a>
                 </div>
-                <div class="btn_two">
-                    <label for="check">
-                        <i class="fas fa-times"></i>
-                    </label>
-                </div>
                 <div class="menu">
                     <ul>
                         <li>
-                            <i class="fas fa-qrcode"></i>
+                            <i class="fa-solid fa-qrcode"></i>
                             <a href="./index.php">Inicio</a>
                         </li>
                         <!-- Data -->
                         <div onclick="SetBox('Data')">
                             <li>
-                                <i class="far fa-newspaper"></i>
+                                <i class="fa-solid fa-database"></i>
                                 <a href="#">Data</a>
                                 <ul id="Data">
                                     <li>
-                                        <i class="fas fa-plus"></i>
+                                        <i class="fa-solid fa-plus"></i>
                                         <a href="./pages/catalogo.php">Añadir</a>
                                     </li>
                                     <li>
-                                        <i class="fas fa-minus"></i>
+                                        <i class="fa-solid fa-minus"></i>
                                         <a href="./pages/FormDEL.php">Quitar</a>
                                     </li>
                                     <li>
-                                        <i class="fas fa-exchange-alt"></i>
+                                        <i class="fa-solid fa-right-left"></i>
                                         <a href="./pages/FormMOD.php">Modificar</a>
                                     </li>
                                 </ul>
@@ -64,14 +59,14 @@
                         <!-- Fin de Data -->
                         <div onclick="SetBox('Consultas')">
                             <li>
-                                <i class="fas fa-user-plus"></i>
+                                <i class="fa-solid fa-clipboard-question"></i>
                                 <a href="./pages/consultas.php">Consultas</a>
                                 <ul id="Consultas">
                                 </ul>
                             </li>
                         </div>
                         <li>
-                            <i class="far fa-comments"></i>
+                            <i class="fa-solid fa-id-card-clip"></i>
                             <a href="#">Planes</a>
                         </li>
                     </ul>
