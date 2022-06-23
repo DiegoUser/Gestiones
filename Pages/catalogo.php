@@ -36,7 +36,7 @@
                                 <h4>Tipo:</h4>
                             </td>
                             <td>
-                                <select name="Agregar">
+                                <select name="Agregar" class="Agregar">
                                     <option selected value="0"> Elige una opción </option>
                                     <optgroup label="Ingreso">
                                         <option value="1">Ingreso Fijo</option>
