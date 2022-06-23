@@ -1,7 +1,7 @@
 <?php
 // Valores con PHP. Estos podrían venir de una base de datos o de cualquier lugar del servidor
-$etiquetas = ["Enero", "Febrero", "Marzo", "Abril"];
-$datosVentas = [5000, 1500, 8000, 5102];
+$etiquetas = ["Enero", "Febrero", "Marzo", "Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"];
+$datosVentas = ["SELECT importeGastos FROM gestion"];
 ?>
 
 <!DOCTYPE html>
@@ -159,32 +159,25 @@ $datosVentas = [5000, 1500, 8000, 5102];
             const etiquetas = <?php echo json_encode($etiquetas) ?>;
             // Podemos tener varios conjuntos de datos
 
-            const datosVentas2018 = {
-                label: "Ventas por mes - 2018",
+            const datosIngreso2022 = {
+                label: "Ingresos por mes - 2022",
                 data:<?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
                 backgroundColor: 'rgba(211,93,110, 0.2)', // Color de fondo
                 borderColor: 'rgba(211,93,110, 1)', // Color del borde
                 borderWidth: 1, // Ancho del borde
             };
-            const datosVentas2019 = {
-                label: "Ventas por mes - 2019",
+            const datosEgreso2022= {
+                label: "Egresos por mes - 2022",
                 data: <?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
                 backgroundColor: 'rgba(209,234,163,0.5)', // Color de fondo
                 borderColor: 'rgba(209,234,163,1)', // Color del borde
                 borderWidth: 1, // Ancho del borde
             };
-            const datosVentas2020 = {
-                label: "Ventas por mes - 2020",
+            const datosAhorro2022 = {
+                label: "Ahorros por mes - 2022",
                 data:<?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
                 backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
                 borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-                borderWidth: 1, // Ancho del borde
-            };
-            const datosVentas = {
-                label: "Ventas por mes - 2021",
-                data: <?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-                backgroundColor: 'rgba(255, 159, 64, 0.2)', // Color de fondo
-                borderColor: 'rgba(255, 159, 64, 1)', // Color del borde
                 borderWidth: 1, // Ancho del borde
             };
 
@@ -193,10 +186,9 @@ $datosVentas = [5000, 1500, 8000, 5102];
                 data: {
                     labels: etiquetas,
                     datasets: [
-                        datosVentas2018,
-                        datosVentas2019,
-                        datosVentas2020,
-                        datosVentas,
+                        datosIngreso2022,
+                        datosEgreso2022,
+                        datosAhorro2022,
                         // Aquí más datos...
                     ]
                 },
