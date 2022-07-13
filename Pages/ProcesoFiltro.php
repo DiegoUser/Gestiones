@@ -1,9 +1,3 @@
-<?php
-// Valores con PHP. Estos podrían venir de una base de datos o de cualquier lugar del servidor
-$etiquetas = ["Enero", "Febrero", "Marzo", "Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"];
-$datosVentas = ["SELECT importeGastos FROM gestion"];
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -151,58 +145,11 @@ $datosVentas = ["SELECT importeGastos FROM gestion"];
                     ?>
             </form>
         </div>
-        <canvas id="grafica"></canvas>
-        <script type="text/javascript">
-            // Obtener una referencia al elemento canvas del DOM
-            const $grafica = document.querySelector("#grafica");
-            // Las etiquetas son las que van en el eje X. 
-            const etiquetas = <?php echo json_encode($etiquetas) ?>;
-            // Podemos tener varios conjuntos de datos
-
-            const datosIngreso2022 = {
-                label: "Ingresos por mes - 2022",
-                data:<?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-                backgroundColor: 'rgba(211,93,110, 0.2)', // Color de fondo
-                borderColor: 'rgba(211,93,110, 1)', // Color del borde
-                borderWidth: 1, // Ancho del borde
-            };
-            const datosEgreso2022= {
-                label: "Egresos por mes - 2022",
-                data: <?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-                backgroundColor: 'rgba(209,234,163,0.5)', // Color de fondo
-                borderColor: 'rgba(209,234,163,1)', // Color del borde
-                borderWidth: 1, // Ancho del borde
-            };
-            const datosAhorro2022 = {
-                label: "Ahorros por mes - 2022",
-                data:<?php echo json_encode($datosVentas) ?>, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-                backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
-                borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-                borderWidth: 1, // Ancho del borde
-            };
-
-            new Chart($grafica, {
-                type: 'line', // Tipo de gráfica
-                data: {
-                    labels: etiquetas,
-                    datasets: [
-                        datosIngreso2022,
-                        datosEgreso2022,
-                        datosAhorro2022,
-                        // Aquí más datos...
-                    ]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }],
-                    },
-                }
-            });
-        </script>
+        <?php include "../conexion.inc";
+        $sql="SELECT importeGastos FROM gestion";
+        $result= mysqli_query($conex, $sql);
+        
+        ?>
     </div>
 </body>
 
